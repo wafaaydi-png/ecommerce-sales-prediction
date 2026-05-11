@@ -86,4 +86,7 @@ L’utilisateur entre les caractéristiques du produit via une interface web int
 - Automatiser l’estimation des ventes avant commercialisation.
 - Aider à la prise de décision commerciale.
 - Optimiser la gestion des stocks et la stratégie produit.
+- ## 📷 Capture d’écran
+
+![Capture écran](appEcommerceSales.png)
 
