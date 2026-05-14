@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>E-Commerce Sales Predictor</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f6f8;
+    padding:20px;
+}
+
+.container{
+    background:white;
+    border-radius:18px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.08);
+    overflow:hidden;
+}
+
+.header{
+    background:linear-gradient(90deg,#ff8c00,#ff6b00);
+    color:white;
+    padding:25px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header h1{
+    font-size:34px;
+}
+
+.main{
+    display:flex;
+    padding:30px;
+    gap:25px;
+}
+
+.left{
+    width:48%;
+    background:#fafafa;
+    padding:30px;
+    border-radius:16px;
+    border:1px solid #eee;
+}
+
+.right{
+    width:52%;
+}
+
+h2{
+    margin-bottom:25px;
+    color:#333;
+}
+
+label{
+    display:block;
+    margin-top:18px;
+    margin-bottom:8px;
+    color:#444;
+    font-weight:bold;
+}
+
+input,select{
+    width:100%;
+    padding:14px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    font-size:16px;
+}
+
+input:focus,select:focus{
+    outline:none;
+    border-color:#ff8c00;
+}
+
+button{
+    width:100%;
+    margin-top:30px;
+    padding:16px;
+    background:linear-gradient(90deg,#ff8c00,#ff6b00);
+    border:none;
+    color:white;
+    border-radius:12px;
+    font-size:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+.image-box{
+    background:white;
+    border-radius:16px;
+    padding:20px;
+    text-align:center;
+    border:1px solid #eee;
+}
+
+.image-box img{
+    width:100%;
+    max-height:380px;
+    object-fit:contain;
+}
+
+.result{
+    margin-top:25px;
+    background:#fff8ef;
+    border:1px solid #ffd6a5;
+    border-radius:16px;
+    padding:35px;
+    text-align:center;
+}
+
+.result h3{
+    color:#ff6b00;
+    margin-bottom:15px;
+    font-size:32px;
+}
+
+.result p{
+    font-size:48px;
+    font-weight:bold;
+    color:#d35400;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🛒 E-Commerce Sales Predictor</h1>
+        <h2>Prédiction des ventes</h2>
+    </div>
+
+    <div class="main">
+
+        <div class="left">
+            <h2>Entrer les informations du produit</h2>
+
+            <form action="/" method="post">
+
+                <label>Quantité (Quantity)</label>
+                <input type="number" step="any" name="quantity" required>
+
+                <label>Poids (Weight)</label>
+                <input type="number" step="any" name="weight" required>
+
+                <label>Prix Unitaire (Unit Price)</label>
+                <input 
+                    type="number" 
+                    step="0.01" 
+                    name="unit_price" 
+                    placeholder="Ex: 12.50"
+                    required
+                >
+
+                <label>Catégorie (Category)</label>
+                <select name="category" required>
+                    <option value="">Choisir catégorie</option>
+                    <option value="Food">Food</option>
+                    <option value="Disposables">Disposables</option>
+                    <option value="Petfood">Petfood</option>
+                    <option value="Cleaning Supplies">Cleaning Supplies</option>
+                    <option value="Supplements">Supplements</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Grooming">Grooming</option>
+                </select>
+
+                <label>Région (Region)</label>
+                <select name="region" required>
+                    <option value="North">North</option>
+                    <option value="South">South</option>
+                    <option value="East">East</option>
+                    <option value="West">West</option>
+                </select>
+
+                <button type="submit">📈 Prédire les ventes</button>
+
+            </form>
+        </div>
+
+        <div class="right">
+
+            <div class="image-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png">
+            </div>
+
+            {% if prediction %}
+            <div class="result">
+                <h3>📈 Ventes prédites</h3>
+                <p>{{ prediction }} $</p>
+            </div>
+            {% endif %}
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
