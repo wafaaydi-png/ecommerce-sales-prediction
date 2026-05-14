@@ -1,92 +1,77 @@
-# 🛒 E-Commerce Sales Prediction with Flask & XGBoost
+🛒 E-Commerce Sales Prediction Web App
 
-## 📌 Description du projet
+📌 Description du projet
 
-Ce projet est une application web développée avec **Python** et **Flask** permettant de **prédire les ventes (Sales Prediction)** d’un produit e-commerce grâce au **Machine Learning**.
+Ce projet est une application Machine Learning de bout en bout permettant de prédire les ventes d’un produit e-commerce à partir de plusieurs caractéristiques produit.
 
-Le modèle de prédiction utilise **XGBoost**, sélectionné comme meilleur modèle après comparaison avec plusieurs algorithmes (**Linear Regression, Random Forest et XGBoost**).
+L’objectif est de combiner :
 
-L’utilisateur entre les caractéristiques du produit via une interface web interactive, puis l’application prédit automatiquement le montant estimé des ventes.
+Analyse exploratoire des données
+Construction d’un modèle prédictif
+Déploiement d’une application web interactive
 
----
+L’utilisateur saisit les informations du produit, puis le modèle estime automatiquement le montant prédit des ventes.
 
-## 🚀 Fonctionnalités
+📸 Aperçu de l’application
 
-- Prédiction des ventes en temps réel
-- Interface web simple et intuitive
-- Formulaire interactif
-- Encodage automatique des variables catégorielles
-- Chargement du modèle sauvegardé (.pkl)
-- Affichage instantané du résultat
+<p align="center">
+  <img src="images/ven1.png" width="900">
+</p>
 
----
+🎯 Objectifs
 
-## 🛠️ Technologies utilisées
+Analyser les données de ventes e-commerce
+Identifier les variables influençant les ventes
+Construire un modèle de prédiction performant
+Déployer le modèle dans une application Flask
+Fournir des prédictions en temps réel via une interface simple et intuitive
 
-- **Python**
-- **Flask**
-- **Pandas**
-- **Scikit-learn**
-- **XGBoost**
-- **Joblib**
-- **HTML**
-- **CSS**
+🧠 Pipeline Machine Learning
 
----
+1. Préparation des données
+Nettoyage des données
+Sélection des variables
+Encodage des variables catégorielles
+Transformation des données
+2. Analyse exploratoire (EDA)
+Distribution des ventes
+Analyse par catégorie
+Analyse par région
+Corrélations entre variables
 
-## 📊 Variables utilisées
+4. Entraînement du modèle
 
-### Variables d'entrée :
+Plusieurs modèles de régression ont été testés.
+Le modèle retenu est :
 
-- **Quantity** → Quantité commandée
-- **Weight** → Poids du produit
-- **Category** → Catégorie produit
-- **Region** → Région de vente
+✅ XGBoost Regressor
 
-### Variable cible :
+Choisi pour :
 
-- **Sales** → Montant des ventes prédit
+sa haute performance sur données tabulaires
+sa robustesse
+sa précision de prédiction
+4. Déploiement
 
----
+Le modèle entraîné a été exporté puis intégré dans une application web développée avec Flask.
 
-## 🤖 Modèles testés
+🛠 Technologies utilisées
 
-| Modèle | R² Score | MAE | RMSE |
-|--------|----------|------|------|
-| Linear Regression | 0.642 | 30.713 | 101.048 |
-| Random Forest | 0.770 | 10.424 | 81.028 |
-| **XGBoost** | **0.789** | **11.596** | **77.480** |
+Analyse & Machine Learning
 
-### ✅ Meilleur modèle sélectionné : XGBoost
+Python
+Pandas
+NumPy
+Scikit-learn
+XGBoost
 
-## 📈 Insights principaux
+Visualisation
 
-### 1. Le modèle XGBoost offre les meilleures performances
-- **R² = 0.789** → bonne capacité à expliquer la variation des ventes.
-- **RMSE = 77.48** → erreur globale la plus faible parmi les modèles testés.
-- XGBoost a été choisi comme modèle final pour la prédiction.
+Matplotlib
+Seaborn
 
-### 2. La quantité influence fortement les ventes
-- Plus la **quantité commandée** augmente, plus le montant des ventes prédit augmente.
-- Cette variable a un impact direct sur le chiffre d’affaires.
+Déploiement Web
 
-### 3. Certaines catégories génèrent plus de revenus
-- Les catégories comme **Electronics** et **Food** peuvent produire des ventes plus élevées.
-- La catégorie produit est un facteur important dans la prédiction.
-
-### 4. La région peut affecter les ventes
-- Les ventes peuvent varier selon la région (**North, South, East, West**).
-- Certaines régions montrent un potentiel commercial plus important.
-
-### 5. Le poids du produit peut influencer le prix final
-- Le **Weight** peut être lié au coût ou à la valeur du produit.
-- Son impact contribue à améliorer la précision du modèle.
-
-### 6. Application pratique
-- Automatiser l’estimation des ventes avant commercialisation.
-- Aider à la prise de décision commerciale.
-- Optimiser la gestion des stocks et la stratégie produit.
-- ## 📷 Capture d’écran
-
-![Capture écran](appEcommerceSales.png)
-
+Flask
+HTML
+CSS
