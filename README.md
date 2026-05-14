@@ -14,7 +14,7 @@ L’utilisateur saisit les informations du produit, puis le modèle estime autom
 
 📸 Aperçu de l’application
 
-![capture](inteface.png)
+![capture](ven1.png)
 
 🎯 Objectifs
 
