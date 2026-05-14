@@ -37,7 +37,7 @@ La prédiction est basée sur plusieurs caractéristiques :
 
 ## Méthodologie
 
-Le projet suit les principales étapes d’un pipeline de Data Science :
+Le projet suit les principales étapes  :
 
 - préparation et nettoyage des données ;
 - analyse exploratoire des données ;
@@ -64,9 +64,7 @@ Le projet suit les principales étapes d’un pipeline de Data Science :
 Le modèle développé permet de prédire les ventes de manière fiable et peut servir d’outil d’aide à la décision pour améliorer la planification commerciale et la gestion des ressources.
 
 
-📸 Aperçu de l’application
 
-![capture](ven1.png)
 
 
 
