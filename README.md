@@ -14,9 +14,7 @@ L’utilisateur saisit les informations du produit, puis le modèle estime autom
 
 📸 Aperçu de l’application
 
-<p align="center">
-  <img src="images/ven1.png" width="900">
-</p>
+![capture](inteface.png)
 
 🎯 Objectifs
 
