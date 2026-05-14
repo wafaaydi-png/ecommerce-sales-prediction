@@ -1,75 +1,72 @@
-🛒 E-Commerce Sales Prediction Web App
 
-📌 Description du projet
+# 🛒 E-Commerce Sales Prediction
 
-Ce projet est une application Machine Learning de bout en bout permettant de prédire les ventes d’un produit e-commerce à partir de plusieurs caractéristiques produit.
+## Présentation
 
-L’objectif est de combiner :
+Ce projet consiste à développer un modèle de **Machine Learning** capable de prédire les ventes dans le domaine du e-commerce à partir de différentes caractéristiques liées aux produits.
 
-Analyse exploratoire des données
-Construction d’un modèle prédictif
-Déploiement d’une application web interactive
+L’objectif est d’analyser les données commerciales et de construire un modèle prédictif permettant d’estimer le montant des ventes avec précision.
 
-L’utilisateur saisit les informations du produit, puis le modèle estime automatiquement le montant prédit des ventes.
+---
+
+
+![capture](ven1.png)
+
+## Objectif
+
+Le projet vise à :
+
+- analyser les données de ventes ;
+- identifier les variables influençant les ventes ;
+- entraîner un modèle de prédiction performant ;
+- estimer automatiquement les ventes futures.
+
+---
+
+## Variables utilisées
+
+La prédiction est basée sur plusieurs caractéristiques :
+
+- **Quantité**
+- **Poids**
+- **Prix unitaire**
+- **Catégorie**
+- **Région**
+
+---
+
+## Méthodologie
+
+Le projet suit les principales étapes d’un pipeline de Data Science :
+
+- préparation et nettoyage des données ;
+- analyse exploratoire des données ;
+- transformation et encodage des variables ;
+- entraînement du modèle ;
+- évaluation des performances ;
+- sauvegarde du modèle final.
+
+---
+
+## Technologies utilisées
+
+- **Python**
+- **Pandas**
+- **NumPy**
+- **Scikit-learn**
+- **XGBoost**
+- **Jupyter Notebook**
+
+---
+
+## Résultat
+
+Le modèle développé permet de prédire les ventes de manière fiable et peut servir d’outil d’aide à la décision pour améliorer la planification commerciale et la gestion des ressources.
+
 
 📸 Aperçu de l’application
 
 ![capture](ven1.png)
 
-🎯 Objectifs
 
-Analyser les données de ventes e-commerce
-Identifier les variables influençant les ventes
-Construire un modèle de prédiction performant
-Déployer le modèle dans une application Flask
-Fournir des prédictions en temps réel via une interface simple et intuitive
 
-🧠 Pipeline Machine Learning
-
-1. Préparation des données
-Nettoyage des données
-Sélection des variables
-Encodage des variables catégorielles
-Transformation des données
-2. Analyse exploratoire (EDA)
-Distribution des ventes
-Analyse par catégorie
-Analyse par région
-Corrélations entre variables
-
-4. Entraînement du modèle
-
-Plusieurs modèles de régression ont été testés.
-Le modèle retenu est :
-
-✅ XGBoost Regressor
-
-Choisi pour :
-
-sa haute performance sur données tabulaires
-sa robustesse
-sa précision de prédiction
-4. Déploiement
-
-Le modèle entraîné a été exporté puis intégré dans une application web développée avec Flask.
-
-🛠 Technologies utilisées
-
-Analyse & Machine Learning
-
-Python
-Pandas
-NumPy
-Scikit-learn
-XGBoost
-
-Visualisation
-
-Matplotlib
-Seaborn
-
-Déploiement Web
-
-Flask
-HTML
-CSS
