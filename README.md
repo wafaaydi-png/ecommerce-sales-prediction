@@ -1,70 +1,106 @@
 
-# 🛒 E-Commerce Sales Prediction
+## 🛒 Prédiction des Ventes E-Commerce | Machine Learning
 
-## Présentation
+## 📌 Présentation du projet
 
-Ce projet consiste à développer un modèle de **Machine Learning** capable de prédire les ventes dans le domaine du e-commerce à partir de différentes caractéristiques liées aux produits.
+Ce projet consiste en la création d’un **modèle de Machine Learning** capable de prédire les ventes dans le domaine du e-commerce à partir de différentes caractéristiques liées aux produits et aux transactions.
 
-L’objectif est d’analyser les données commerciales et de construire un modèle prédictif permettant d’estimer le montant des ventes avec précision.
+L’objectif est d’analyser les données commerciales afin de transformer les informations disponibles en **prédictions exploitables**, permettant d’anticiper les ventes futures et d’améliorer la prise de décision stratégique.
 
 ---
 
-
+# 📂 Structure du projet
 ![capture](ven1.png)
 
-## Objectif
+## 1️⃣ Préparation et analyse des données
 
-Le projet vise à :
+Cette étape est dédiée au nettoyage, à la transformation et à l’exploration des données avant l’entraînement du modèle.
 
-- analyser les données de ventes ;
-- identifier les variables influençant les ventes ;
-- entraîner un modèle de prédiction performant ;
-- estimer automatiquement les ventes futures.
+### Traitements réalisés
 
----
+- Nettoyage des données
+- Gestion des valeurs manquantes
+- Vérification de la cohérence des variables
+- Préparation des données pour la modélisation
 
-## Variables utilisées
+### Variables utilisées
 
-La prédiction est basée sur plusieurs caractéristiques :
+- Quantité
+- Poids
+- Prix unitaire
+- Catégorie
+- Région
 
-- **Quantité**
-- **Poids**
-- **Prix unitaire**
-- **Catégorie**
-- **Région**
+### Analyses disponibles
 
----
+- Exploration des tendances de ventes
+- Identification des variables influençant les ventes
+- Analyse des relations entre les caractéristiques produits et les ventes
 
-## Méthodologie
+### Objectif
 
-Le projet suit les principales étapes  :
-
-- préparation et nettoyage des données ;
-- analyse exploratoire des données ;
-- transformation et encodage des variables ;
-- entraînement du modèle ;
-- évaluation des performances ;
-- sauvegarde du modèle final.
+Préparer un jeu de données fiable et pertinent pour optimiser la qualité des prédictions.
 
 ---
 
-## Technologies utilisées
+## 2️⃣ Modélisation Machine Learning
 
-- **Python**
-- **Pandas**
-- **NumPy**
-- **Scikit-learn**
-- **XGBoost**
-- **Jupyter Notebook**
+Cette étape permet de construire et d’évaluer un modèle prédictif capable d’estimer les ventes futures.
+
+### Méthodes utilisées
+
+- Transformation et encodage des variables
+- Séparation des données d’entraînement et de test
+- Entraînement du modèle
+- Évaluation des performances
+- Optimisation du modèle
+
+### Algorithmes utilisés
+
+- Régression supervisée
+- Scikit-learn
+- XGBoost
+
+### Objectif
+
+Développer un modèle performant permettant de prédire les ventes avec précision.
 
 ---
 
-## Résultat
+## 3️⃣ Résultats et exploitation
 
-Le modèle développé permet de prédire les ventes de manière fiable et peut servir d’outil d’aide à la décision pour améliorer la planification commerciale et la gestion des ressources.
+Cette partie permet d’utiliser le modèle comme outil d’aide à la décision commerciale.
 
+### Fonctionnalités disponibles
 
+- Estimation automatique des ventes futures
+- Analyse des facteurs influençant les ventes
+- Support à la planification commerciale
+- Optimisation de la gestion des ressources
 
+### Objectif
 
+Transformer les prédictions en informations utiles pour améliorer la performance commerciale.
 
+---
 
+# 🛠️ Outils utilisés
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- XGBoost
+- Jupyter Notebook
+
+---
+
+# 🎯 Résultats attendus
+
+Ce projet permet de :
+
+- Analyser les données de ventes e-commerce
+- Identifier les variables clés influençant les ventes
+- Construire un modèle prédictif fiable
+- Anticiper les ventes futures
+- Faciliter la prise de décision grâce aux prédictions
